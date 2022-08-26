@@ -14,3 +14,20 @@
 
 **注意：这里有些题目没有分数，仍使用的是LeetCode本身就有的等级**
 
+#### 使用方式
+
+打开Chrome浏览器插件的开发者模式
+
+![image-20220826085742750](readme.assets/image-20220826085742750.png)
+
+<center>图1 Chrome的插件管理界面</center>
+
+将仓库下载到本地（使用git）
+
+```shell
+git clone https://github.com/karentwan/LeetCodeAssistant.git
+```
+
+然后将整个文件夹拖进图1所示的插件管理界面当中即可。
+
+如有使用上的问题或者更好的建议，欢迎提issue.
