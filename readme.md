@@ -10,7 +10,7 @@
 
 ![image-20220825144408641](readme.assets/image-20220825144408641.png)
 
-该功能依托与零神的一个项目，[传送门](https://github.com/zerotrac/leetcode_problem_rating)
+该功能依托于零神的一个项目，[传送门](https://github.com/zerotrac/leetcode_problem_rating)
 
 **注意：这里有些题目没有分数，仍使用的是LeetCode本身就有的等级**
 
