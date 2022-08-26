@@ -18,7 +18,7 @@
 
 打开Chrome浏览器插件的开发者模式
 
-![image-20220826085742750](readme.assets/image-20220826085742750.png)
+![image-20220826090825873](readme.assets/image-20220826090825873.png)
 
 <p align="center">图1 Chrome的插件管理界面</p>
 
