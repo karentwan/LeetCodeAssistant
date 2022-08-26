@@ -20,7 +20,7 @@
 
 ![image-20220826085742750](readme.assets/image-20220826085742750.png)
 
-<center>图1 Chrome的插件管理界面</center>
+<p align="center">图1 Chrome的插件管理界面</p>
 
 将仓库下载到本地（使用git）
 
