@@ -1,32 +1,52 @@
 {
-   "manifest_version": 2,
-   "name": "LeetCode Assistant",
-   "version": "1.0.1",
-   "description": "LeetCode帮手",
-   "background": {
-       "scripts": ["lib/background.js"],
-       "persistent": true
-   },
-   "content_scripts": [
-       {
-           "matches": ["https://leetcode.cn/*"],
-           "js": ["lib/jquery-3.6.0.min.js", "lib/content.js"],
-           "run_at": "document_end"
-       }, 
-       {
-            "matches": ["https://leetcode.cn/problemset/all/"],
-            "js": ["lib/jquery-3.6.0.min.js", "lib/collect.js"],
+    "manifest_version": 3,
+    "name": "LeetCode Assistant",
+    "version": "1.0.1",
+    "description": "LeetCode帮手",
+    "background": {
+        "service_worker": "lib/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://leetcode.cn/*"
+            ],
+            "js": [
+                "lib/jquery-3.6.0.min.js",
+                "lib/content.js"
+            ],
             "run_at": "document_end"
-       }
-   ],
-   "premissions": [
-       "contextMenus",
-       "tabs",
-       "notifications",
-       "webRequest",
-       "storage",
-       "http://*/*",
-       "https://*/*"
-   ],
-   "web_accessible_resources": ["lib/problems.json"]
+        },
+        {
+            "matches": [
+                "https://leetcode.cn/problemset/all/"
+            ],
+            "js": [
+                "lib/jquery-3.6.0.min.js",
+                "lib/collect.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "notifications",
+        "webRequest",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "lib/problems.json"
+            ],
+            "matches": [
+                "https://leetcode.cn/*"
+            ]
+        }
+    ]
 }
