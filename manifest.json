@@ -4,7 +4,7 @@
     "version": "1.0.1",
     "description": "LeetCode帮手",
     "background": {
-        "service_worker": "lib/background.js"
+        "service_worker": "background.js"
     },
     "content_scripts": [
         {
