@@ -9,7 +9,18 @@
     "content_scripts": [
         {
             "matches": [
-                "https://leetcode.cn/*"
+            "https://leetcode.cn/*",
+            "https://leetcode.com/*"
+        ],
+            "js": [
+                "lib/localization.js"
+            ],
+            "run_at":"document_start"
+        },
+        {
+            "matches": [
+                "https://leetcode.cn/*",
+                "https://leetcode.com/*"
             ],
             "js": [
                 "lib/jquery-3.6.0.min.js",
@@ -19,7 +30,8 @@
         },
         {
             "matches": [
-                "https://leetcode.cn/problemset/all/"
+                "https://leetcode.cn/problemset/all/",
+                "https://leetcode.com/problemset/all/"
             ],
             "js": [
                 "lib/jquery-3.6.0.min.js",
@@ -45,7 +57,8 @@
                 "lib/problems.json"
             ],
             "matches": [
-                "https://leetcode.cn/*"
+                "https://leetcode.cn/*",
+                "https://leetcode.com/*"
             ]
         }
     ]
